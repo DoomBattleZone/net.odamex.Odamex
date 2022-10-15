@@ -1,0 +1,35 @@
+app-id: net.odamex.Odamex
+runtime: org.freedesktop.Platform
+runtime-version: "21.08"
+sdk: org.freedesktop.Sdk
+command: odamex
+finish-args:
+  # X11 + XShm access
+  - --share=ipc
+  - --socket=x11
+  # Wayland access
+  - --socket=wayland
+  # Needs to talk to the network:
+  - --share=network
+  # Needs to save files locally
+  - --filesystem=xdg-documents
+#sources:
+#  - name: odamex
+#    buildsystem: cmake
+#    builddir: true
+#    config-opts:
+#      - -DCMAKE_BUILD_TYPE=RelWithDebInfo
+#    sources:
+#      - type: git
+#        url: https://github.com/odamex/odamex.git
+#        tag: 10.1.0
+#        commit: 0a8476d24038d9206463e5d97c30799ce5989bef
+modules:
+  - modules/curl/curl.json
+  - modules/deutex/deutex.json
+  - modules/libpng/libpng.json
+  - modules/odamex/odamex.json
+  - modules/SDL2/SDL2_mixer.json
+  - modules/SDL2/SDL2.json
+  - modules/wxWidgets/wxWidgets.json
+  - modules/zlib/zlib.json

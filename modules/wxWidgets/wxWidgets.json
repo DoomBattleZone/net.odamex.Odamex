@@ -1,0 +1,13 @@
+{
+    "name": "wxWidgets",
+    "buildsystem": "cmake",
+    "config-opts": "-DCMAKE_BUILD_TYPE=Release",
+    "sources": [
+        {
+            "type": "git",
+            "url": "https://github.com/wxWidgets/wxWidgets.git",
+            "tag": "v3.2.1",
+            "commit": "97e99707c5d2271a70cb686720b48dbf34ced496"
+        }
+    ]
+}

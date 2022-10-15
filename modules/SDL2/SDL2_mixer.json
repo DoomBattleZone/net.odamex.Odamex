@@ -1,0 +1,57 @@
+{
+    "name": "SDL2_mixer",
+    "buildsystem": "simple",
+    "build-commands": [
+        "./autogen.sh",
+        "./configure",
+        "make"
+    ],
+
+    "sources": [
+        {
+            "type": "git",
+            "url": "https://github.com/libsdl-org/SDL_mixer.git",
+            "tag": "release-2.6.2",
+            "commit": "75f318100d220e236c4fcc5a3d0c9ba33d064f3f"
+        }
+    ],
+    
+    "modules": [
+        {
+            "name": "fluidsynth",
+            "buildsystem": "cmake",
+            "config-opts": [
+                "-DCMAKE_BUILD_TYPE=Release"
+            ],
+
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://github.com/FluidSynth/fluidsynth.git",
+                    "tag": "v2.3.0",
+                    "commit": "bfe3599b286f30d561e4df0b0785fa78d6652628"
+                }
+            ]
+        },
+
+        {
+            "name": "libmodplug",
+            "buildsystem": "simple",
+            "build-commands": [
+                "./configure",
+                "make"
+            ],
+
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://sourceforge.net/projects/modplug-xmms/files/libmodplug/0.8.9.0/libmodplug-0.8.9.0.tar.gz/download",
+                    "archive-type": "tar-gzip",
+                    "md5": "5ba16981e6515975e9a68a58d5ba69d1",
+                    "sha1": "9d18572f85fdd95091befa972ee5d94139dcefde",
+                    "sha256": "457ca5a6c179656d66c01505c0d95fafaead4329b9dbaa0f997d00a3508ad9de"
+                }
+            ]
+        }
+    ]
+}
