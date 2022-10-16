@@ -3,12 +3,13 @@
     "buildsystem": "cmake",
     "builddir": true,
     "config-opts": "-DCMAKE_BUILD_TYPE=RelWithDebInfo",
+
     "sources": [
         {
             "type": "git",
             "url": "https://github.com/odamex/odamex.git",
-            "tag": "10.1.0",
-            "commit": "0a8476d24038d9206463e5d97c30799ce5989bef"
+            "tag": "10.2.0",
+            "commit": "f6615def7daaab1271f70a2495abd0a6bf8cdacf"
         }
     ]
 }
