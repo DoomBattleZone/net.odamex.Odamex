@@ -2,7 +2,7 @@
 Categories=Game;
 Comment[en_US]=Online Multiplayer Doom port with a strong focus on the original gameplay while providing a breadth of enhancements.
 Comment=Online Multiplayer Doom port with a strong focus on the original gameplay while providing a breadth of enhancements.
-Exec=odamex
+Exec=odalaunch
 GenericName[en_US]=Online Multiplayer Doom Port
 GenericName=Online Multiplayer Doom Port
 Icon=/home/sapientlion/Desktop/net.odamex.Odamex/net.odamex.Odamex.512.png

@@ -1,13 +1,13 @@
 {
-    "name": "odamex",
+    "name": "odalaunch",
     "buildsystem": "cmake",
     "builddir": true,
     "config-opts": [
         "-DCMAKE_BUILD_TYPE=RelWithDebInfo",
         "-DBUILD_OR_FAIL=1",
-        "-DBUILD_CLIENT=1",
+        "-DBUILD_CLIENT=0",
         "-DBUILD_SERVER=0",
-        "-DBUILD_LAUNCHER=0",
+        "-DBUILD_LAUNCHER=1",
         "-DUSE_SANITIZE_ADDRESS=1"
     ],
 

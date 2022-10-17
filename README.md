@@ -16,7 +16,6 @@ To install this flatpak you have to do the following:
 
 ## Notes
 
-* Music may or may not work. Reason unknown.
-* Server browser is currently not included in this bundle due to crashes/instability.
+* Music may or may not work on some distributions. Reason unknown.
 * `ODAMEX.WAD` is not included by default in this bundle.
 * This flatpak is currently not available as a downloadable package in any of the repositories (such as Flathub) due to its experimental nature. Expect issues and inconsistency. You've been warned.

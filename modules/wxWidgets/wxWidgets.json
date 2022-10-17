@@ -1,0 +1,20 @@
+{
+    "name": "wxWidgets",
+    "buildsystem": "autotools",
+    "builddir": true,
+
+    "sources": [
+        {
+            "type": "git",
+            "url": "https://github.com/wxWidgets/wxWidgets.git",
+            "tag": "v3.0.5.1",
+            "commit": "2740737b40d30817b474e30ff76e43f0903c2e97"
+        }
+    ],
+
+    "build-options": [
+        {
+            "cxxflags": "-std=gnu++98"
+        }
+    ]
+}

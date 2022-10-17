@@ -2,7 +2,7 @@ app-id: net.odamex.Odamex
 runtime: org.freedesktop.Platform
 runtime-version: "21.08"
 sdk: org.freedesktop.Sdk
-command: odamex
+command: odalaunch
 finish-args:
   # Odamex multiplayer component requires access to the internet network.
   - --share=network
@@ -18,6 +18,8 @@ finish-args:
   # Give access to entire home directory (dot files are not included).
   - --filesystem=home
 modules:
+  - modules/wxWidgets/wxWidgets.json
+  - modules/odamex/odalaunch.json
   - modules/odamex/odamex.json
   
   - name: main
